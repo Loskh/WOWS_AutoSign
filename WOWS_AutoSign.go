@@ -108,6 +108,9 @@ func CheckandSign(u UserData) {
 }
 
 func main() {
+	flag.StringVar(&userfile, "user", "userlist.json", "config file")
+	flag.Parse()
+	flag.Usage()
 	b, err := ioutil.ReadFile("userlist.json")
 	if err != nil {
 		fmt.Print(err)
