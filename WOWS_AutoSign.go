@@ -108,6 +108,7 @@ func CheckandSign(u UserData) {
 }
 
 func main() {
+	var userfile string
 	flag.StringVar(&userfile, "user", "userlist.json", "config file")
 	flag.Parse()
 	flag.Usage()
